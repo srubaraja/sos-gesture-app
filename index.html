@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emergency SOS Gesture Recognition</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+    video { width: 100%; max-width: 400px; border: 1px solid #ccc; }
+    #status { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Emergency SOS Gesture Recognition</h1>
+  <video id="video" autoplay playsinline></video>
+  <div id="status">Status: Waiting for gesture...</div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.3.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+</body>
+</html>
