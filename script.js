@@ -68,3 +68,9 @@ function playAlarmSound() {
   oscillator.start();
   oscillator.stop(audioCtx.currentTime + 1);
 }
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').then(() => {
+    console.log('Service Worker Registered');
+  });
+}
